@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Luxury beauty salon in Gaborone offering facial therapy, bridal glam, massages & organic skincare.">
+    <meta name="description" content="Luxury beauty salon in Gaborone offering facials, waxing, massages, manicures & pedicures for the modern Motswana woman.">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Beauty by Rhouser | Elegance Reimagined</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
-        h1, h2, .serif { font-family: 'Playfair Display', serif; }
+        h1, h2, h3, h4, .serif { font-family: 'Playfair Display', serif; }
         html { scroll-behavior: smooth; }
         
-        /* Custom Animations */
         .image-hover { transition: transform 0.5s ease, box-shadow 0.3s ease; }
         .image-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
         
@@ -21,9 +20,11 @@
             70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
             100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
         }
-        .float-btn {
-            animation: pulse-green 2s infinite;
-        }
+        .float-btn { animation: pulse-green 2s infinite; }
+        
+        .price-row { display: flex; justify-content: space-between; align-items: baseline; padding: 10px 0; border-bottom: 1px dotted #e7e5e4; }
+        .price-row:last-child { border-bottom: none; }
+        .price-dot { flex: 1; margin: 0 8px; border-bottom: 2px dotted #d6d3d1; position: relative; top: -4px; }
     </style>
 </head>
 <body class="bg-[#FAF9F6] text-[#2D2D2D]">
@@ -38,14 +39,11 @@
         </div>
     </nav>
 
-    <!-- Hero Section with Spa Background -->
+    <!-- Hero Section -->
     <header class="relative h-[90vh] flex items-center justify-center overflow-hidden">
-        <!-- Dark Overlay -->
         <div class="absolute inset-0 bg-black/40 z-10"></div>
-        <!-- Background Image -->
         <div class="absolute inset-0 bg-[url('image5.jpg')] bg-cover bg-center bg-no-repeat z-0"></div>
         
-        <!-- Content -->
         <div class="relative z-20 text-center text-white px-4 max-w-4xl">
             <span class="uppercase tracking-[0.3em] text-xs md:text-sm mb-4 block font-semibold">Gaborone's Premier Beauty Destination</span>
             <h1 class="text-5xl md:text-7xl mb-6 drop-shadow-lg">Unveil Your Natural <br><span class="italic">Luminescence</span></h1>
@@ -59,80 +57,97 @@
         </div>
     </header>
 
-    <!-- Services Section -->
-    <section id="services" class="py-24 px-6 md:px-10">
-        <div class="max-w-6xl mx-auto">
+    <!-- Services & Pricing Section -->
+    <section id="services" class="py-24 px-6 md:px-10 bg-stone-50">
+        <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl mb-4 text-stone-800">Our Signature Services</h2>
-                <div class="h-1 bg-[#25D366] w-24 mx-auto"></div>
-                <p class="mt-4 text-stone-500 max-w-2xl mx-auto">Experience luxury treatments designed to enhance your natural beauty</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <!-- Service 1 -->
-                <div class="text-center group">
-                    <div class="h-1 bg-amber-700 w-12 mx-auto mb-6"></div>
-                    <h3 class="text-2xl mb-4 uppercase text-stone-800">Body Massage & Therapy</h3>
-                    <p class="text-stone-500 leading-relaxed mb-6">Deep-cleansing and hydration treatments using localized botanical extracts for maximum skin health and relaxation.</p>
-                    <div class="overflow-hidden rounded-lg">
-                        <img src="image0.jpg" alt="Professional back massage treatment at Beauty by Rhouser" class="w-full h-64 object-cover image-hover">
-                    </div>
-                </div>
-                
-                <!-- Service 2 -->
-                <div class="text-center group">
-                    <div class="h-1 bg-amber-700 w-12 mx-auto mb-6"></div>
-                    <h3 class="text-2xl mb-4 uppercase text-stone-800">Facial Treatments</h3>
-                    <p class="text-stone-500 leading-relaxed mb-6">Rejuvenating facial therapies that restore radiance and promote deep relaxation for glowing skin.</p>
-                    <div class="overflow-hidden rounded-lg">
-                        <img src="image1.jpg" alt="Luxury facial treatment and head massage" class="w-full h-64 object-cover image-hover">
-                    </div>
-                </div>
-                
-                <!-- Service 3 -->
-                <div class="text-center group">
-                    <div class="h-1 bg-amber-700 w-12 mx-auto mb-6"></div>
-                    <h3 class="text-2xl mb-4 uppercase text-stone-800">Skin Analysis</h3>
-                    <p class="text-stone-500 leading-relaxed mb-6">One-on-one consultations to build a sustainable, effective home skincare routine tailored to your needs.</p>
-                    <div class="overflow-hidden rounded-lg">
-                        <img src="image3.jpg" alt="Skin analysis and treatment results" class="w-full h-64 object-cover image-hover">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Nail Services Gallery -->
-    <section class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl md:text-5xl mb-4 text-stone-800">Nail Artistry</h2>
+                <h2 class="text-4xl md:text-5xl mb-4 text-stone-800">Services & Pricing</h2>
                 <div class="h-1 bg-amber-700 w-24 mx-auto"></div>
-                <p class="mt-4 text-stone-500">From classic elegance to bold statements</p>
+                <p class="mt-4 text-stone-500 max-w-2xl mx-auto">Transparent pricing for premium beauty treatments</p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="group">
-                    <div class="overflow-hidden rounded-lg shadow-lg">
-                        <img src="image2.jpg" alt="Colorful manicure with pink, yellow and zebra print nail art" class="w-full h-96 object-cover image-hover">
+                <!-- Manicure -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-stone-100">
+                    <h3 class="text-2xl font-serif mb-6 text-stone-800">Manicure</h3>
+                    <div class="space-y-1">
+                        <div class="price-row"><span class="text-stone-600">Gel tips</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P250</span></div>
+                        <div class="price-row"><span class="text-stone-600">Gel overlay (hands)</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P180</span></div>
+                        <div class="price-row"><span class="text-stone-600">Gel overlay (feet)</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P100</span></div>
+                        <div class="price-row"><span class="text-stone-600">Soak off</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P50</span></div>
+                        <div class="price-row"><span class="text-stone-600">Nail art</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P10/nail</span></div>
                     </div>
-                    <h3 class="text-xl mt-4 text-stone-800 font-semibold">Manicure Services</h3>
-                    <p class="text-stone-500 text-sm mt-2">Gel, acrylic, and natural nail care with custom designs</p>
                 </div>
-                
-                <div class="group">
-                    <div class="overflow-hidden rounded-lg shadow-lg">
-                        <img src="image4.jpg" alt="French tip pedicure with pink polish" class="w-full h-96 object-cover image-hover">
+
+                <!-- Pedicure -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-stone-100">
+                    <h3 class="text-2xl font-serif mb-6 text-stone-800">Pedicure</h3>
+                    <div class="space-y-1">
+                        <div class="price-row"><span class="text-stone-600">Gentleman’s pedicure</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P280</span></div>
+                        <div class="price-row"><span class="text-stone-600">Full pedicure</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P300</span></div>
+                        <div class="price-row"><span class="text-stone-600">Pedicure with gel</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P350</span></div>
+                        <div class="price-row"><span class="text-stone-600">Pedicure with paraffin wax</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P380</span></div>
                     </div>
-                    <h3 class="text-xl mt-4 text-stone-800 font-semibold">Pedicure Services</h3>
-                    <p class="text-stone-500 text-sm mt-2">Luxury foot care and beautiful pedicure finishes</p>
+                </div>
+
+                <!-- Depilation / Waxing -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-stone-100">
+                    <h3 class="text-2xl font-serif mb-6 text-stone-800">Depilation / Waxing</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8">
+                        <div class="price-row"><span class="text-stone-600">Eyebrow</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P50</span></div>
+                        <div class="price-row"><span class="text-stone-600">Underarm</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P100</span></div>
+                        <div class="price-row"><span class="text-stone-600">Bikini</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P250</span></div>
+                        <div class="price-row"><span class="text-stone-600">Hollywood</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P300</span></div>
+                        <div class="price-row"><span class="text-stone-600">Vajacial</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P350</span></div>
+                        <div class="price-row"><span class="text-stone-600">Full leg</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P200</span></div>
+                        <div class="price-row"><span class="text-stone-600">Half leg</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P100</span></div>
+                        <div class="price-row"><span class="text-stone-600">Full arm</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P250</span></div>
+                        <div class="price-row"><span class="text-stone-600">Half arm</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P200</span></div>
+                    </div>
+                </div>
+
+                <!-- Facials -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-stone-100">
+                    <h3 class="text-2xl font-serif mb-6 text-stone-800">Facials</h3>
+                    <div class="space-y-1">
+                        <div class="price-row"><span class="text-stone-600">Deep cleansing</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P200</span></div>
+                        <div class="price-row"><span class="text-stone-600">Glow facial</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P250</span></div>
+                        <div class="price-row"><span class="text-stone-600">Hydrojelly facial</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P300</span></div>
+                        <div class="price-row"><span class="text-stone-600">Acne attack</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P350</span></div>
+                        <div class="price-row"><span class="text-stone-600">Full facial with LED</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P350</span></div>
+                    </div>
+                </div>
+
+                <!-- Massages (Full Width) -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-stone-100 md:col-span-2">
+                    <h3 class="text-2xl font-serif mb-6 text-stone-800">Massages</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <div>
+                            <h4 class="font-semibold text-stone-700 mb-4 uppercase tracking-wide text-sm border-b pb-2">Full Body Massages (1 Hour)</h4>
+                            <div class="space-y-1">
+                                <div class="price-row"><span class="text-stone-600">Aromatherapy</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P400</span></div>
+                                <div class="price-row"><span class="text-stone-600">Reflexology</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P300</span></div>
+                                <div class="price-row"><span class="text-stone-600">Swedish massage</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P350</span></div>
+                                <div class="price-row"><span class="text-stone-600">Deep tissue massage</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P400</span></div>
+                                <div class="price-row"><span class="text-stone-600">Hot-stones massage</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P450</span></div>
+                                <div class="price-row"><span class="text-stone-600">Lymphatic drainage</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P450</span></div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-stone-700 mb-4 uppercase tracking-wide text-sm border-b pb-2">Back Massages (30 Mins)</h4>
+                            <div class="space-y-1">
+                                <div class="price-row"><span class="text-stone-600">Swedish massage</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P200</span></div>
+                                <div class="price-row"><span class="text-stone-600">Hot-stone massage</span><span class="price-dot"></span><span class="font-semibold text-amber-700">P250</span></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Full Gallery Section -->
-    <section id="gallery" class="py-24 px-6 md:px-10 bg-stone-50">
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24 px-6 md:px-10 bg-white">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl mb-4 text-stone-800">Service Gallery</h2>
@@ -190,12 +205,18 @@
         </div>
     </section>
 
-    <footer class="py-10 text-center text-xs text-stone-400 uppercase tracking-widest border-t border-stone-200">
+    <!-- Footer -->
+    <footer class="py-10 text-center text-xs text-stone-400 uppercase tracking-widest border-t border-stone-200 bg-stone-50">
         <p>&copy; 2026 Beauty by Rhouser Botswana. All Rights Reserved.</p>
-        <p class="mt-2">Crafted with love for the modern Motswana woman</p>
+        <p class="mt-2">Crafted with love for the modern Motswana </p>
+        <div class="mt-6 pt-6 border-t border-stone-200">
+            <p class="text-stone-500 font-mono text-sm">
+                Developed by <span class="text-amber-700 font-bold">CodeEl</span> - Growing Gabane's Digital Economy
+            </p>
+        </div>
     </footer>
 
-    <!-- FLOATING WHATSAPP BUTTON -->
+    <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/26775482753?text=Hello%20Beauty%20by%20Rhouser!%20I'd%20like%20to%20book%20an%20appointment." 
        target="_blank" 
        class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition transform hover:scale-110 float-btn flex items-center justify-center">
