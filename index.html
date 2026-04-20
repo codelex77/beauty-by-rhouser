@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Luxury beauty salon in Gaborone offering facial therapy, bridal glam, massages & organic skincare for the modern Motswana woman.">
+    <meta name="description" content="Luxury beauty salon in Gaborone offering facial therapy, bridal glam, massages & organic skincare.">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Beauty by Rhouser | Elegance Reimagined</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -12,6 +12,7 @@
         h1, h2, .serif { font-family: 'Playfair Display', serif; }
         html { scroll-behavior: smooth; }
         
+        /* Custom Animations */
         .image-hover { transition: transform 0.5s ease, box-shadow 0.3s ease; }
         .image-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
         
@@ -39,9 +40,12 @@
 
     <!-- Hero Section with Spa Background -->
     <header class="relative h-[90vh] flex items-center justify-center overflow-hidden">
+        <!-- Dark Overlay -->
         <div class="absolute inset-0 bg-black/40 z-10"></div>
+        <!-- Background Image -->
         <div class="absolute inset-0 bg-[url('image5.jpg')] bg-cover bg-center bg-no-repeat z-0"></div>
         
+        <!-- Content -->
         <div class="relative z-20 text-center text-white px-4 max-w-4xl">
             <span class="uppercase tracking-[0.3em] text-xs md:text-sm mb-4 block font-semibold">Gaborone's Premier Beauty Destination</span>
             <h1 class="text-5xl md:text-7xl mb-6 drop-shadow-lg">Unveil Your Natural <br><span class="italic">Luminescence</span></h1>
@@ -60,11 +64,12 @@
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl mb-4 text-stone-800">Our Signature Services</h2>
-                <div class="h-1 bg-amber-700 w-24 mx-auto"></div>
+                <div class="h-1 bg-[#25D366] w-24 mx-auto"></div>
                 <p class="mt-4 text-stone-500 max-w-2xl mx-auto">Experience luxury treatments designed to enhance your natural beauty</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Service 1 -->
                 <div class="text-center group">
                     <div class="h-1 bg-amber-700 w-12 mx-auto mb-6"></div>
                     <h3 class="text-2xl mb-4 uppercase text-stone-800">Body Massage & Therapy</h3>
@@ -74,6 +79,7 @@
                     </div>
                 </div>
                 
+                <!-- Service 2 -->
                 <div class="text-center group">
                     <div class="h-1 bg-amber-700 w-12 mx-auto mb-6"></div>
                     <h3 class="text-2xl mb-4 uppercase text-stone-800">Facial Treatments</h3>
@@ -83,6 +89,7 @@
                     </div>
                 </div>
                 
+                <!-- Service 3 -->
                 <div class="text-center group">
                     <div class="h-1 bg-amber-700 w-12 mx-auto mb-6"></div>
                     <h3 class="text-2xl mb-4 uppercase text-stone-800">Skin Analysis</h3>
@@ -160,7 +167,7 @@
     <section id="booking" class="bg-stone-900 py-24 text-center text-white px-6">
         <div class="max-w-3xl mx-auto">
             <h2 class="text-4xl md:text-5xl mb-6">Ready to Start Your Journey?</h2>
-            <div class="h-1 bg-amber-700 w-24 mx-auto mb-8"></div>
+            <div class="h-1 bg-[#25D366] w-24 mx-auto mb-8"></div>
             <p class="text-stone-400 mb-10 text-lg">Visit our studio in Gaborone for a transformative experience. Let us help you unveil your natural luminescence.</p>
             
             <div class="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
@@ -183,18 +190,12 @@
         </div>
     </section>
 
-    <!-- Footer with CodeEl Branding -->
-    <footer class="py-10 text-center text-xs text-stone-400 uppercase tracking-widest border-t border-stone-200 bg-stone-50">
+    <footer class="py-10 text-center text-xs text-stone-400 uppercase tracking-widest border-t border-stone-200">
         <p>&copy; 2026 Beauty by Rhouser Botswana. All Rights Reserved.</p>
         <p class="mt-2">Crafted with love for the modern Motswana woman</p>
-        <div class="mt-6 pt-6 border-t border-stone-200">
-            <p class="text-stone-500 font-mono text-sm">
-                Developed by <span class="text-amber-700 font-bold">CodeEl</span> - Growing Gabane's Digital Economy
-            </p>
-        </div>
     </footer>
 
-    <!-- Floating WhatsApp Button -->
+    <!-- FLOATING WHATSAPP BUTTON -->
     <a href="https://wa.me/26775482753?text=Hello%20Beauty%20by%20Rhouser!%20I'd%20like%20to%20book%20an%20appointment." 
        target="_blank" 
        class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition transform hover:scale-110 float-btn flex items-center justify-center">
