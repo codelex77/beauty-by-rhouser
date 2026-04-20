@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luxury beauty salon in Gaborone offering facial therapy, bridal glam, massages & organic skincare for the modern Motswana woman.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Beauty by Rhouser | Elegance Reimagined</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, .serif { font-family: 'Playfair Display', serif; }
+        html { scroll-behavior: smooth; }
+        .image-hover { transition: transform 0.5s ease, box-shadow 0.3s ease; }
+        .image-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+    </style>
+</head>
+<body class="bg-[#FAF9F6] text-[#2D2D2D]">
+
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-200 px-6 py-4 flex justify-between items-center">
+        <div class="text-xl font-bold tracking-widest uppercase text-stone-800">Beauty by Rhouser</div>
+        <div class="hidden md:flex space-x-8 text-xs font-semibold uppercase tracking-widest">
+            <a href="#services" class="hover:text-amber-700 transition">Services</a>
+            <a href="#gallery" class="hover:text-amber-700 transition">Gallery</a>
+            <a href="#booking" class="bg-stone-900 text-white px-5 py-2 hover:bg-stone-700 transition">Book Now</a>
+        </div>
+    </nav>
+
+    <header class="relative h-[80vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-black/20 z-10"></div>
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1596462502278-27bfdc4033c8?auto=format&fit=crop&q=80')] bg-cover bg-center"></div>
+        
+        <div class="relative z-20 text-center text-white px-4">
+            <span class="uppercase tracking-[0.3em] text-sm mb-4 block">Gaborone's Premier Beauty Destination</span>
+            <h1 class="text-5xl md:text-7xl mb-6">Unveil Your Natural <br><span class="italic">Luminescence</span></h1>
+            <p class="max-w-xl mx-auto text-lg mb-10 text-stone-100 font-light italic">Tailored beauty rituals and organic skincare curated for the modern Motswana woman.</p>
+            <a href="#services" class="border-2 border-white px-10 py-4 uppercase text-xs tracking-widest font-bold hover:bg-white hover:text-black transition duration-300">Discover the Glow</a>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 px-6 md:px-10">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl mb-4 text-stone-800">Our Signature Services</h2>
+                <div class="h-1 bg-amber-700 w-24 mx-auto"></div>
+                <p class="mt-4 text-stone-500 max-w-2xl mx-auto">Experience luxury treatments designed to enhance your natural beauty</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="text-center group">
+                    <div class="h-1 bg-amber-700 w-12 mx-auto mb-6"></div>
+                    <h3 class="text-2xl mb-4 uppercase text-stone-800">Body Massage & Therapy</h3>
+                    <p class="text-stone-500 leading-relaxed mb-6">Deep-cleansing and hydration treatments using localized botanical extracts for maximum skin health and relaxation.</p>
+                    <div class="overflow-hidden rounded-lg">
+                        <img src="image0.jpg" alt="Professional back massage treatment at Beauty by Rhouser" class="w-full h-64 object-cover image-hover">
+                    </div>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="h-1 bg-amber-700 w-12 mx-auto mb-6"></div>
+                    <h3 class="text-2xl mb-4 uppercase text-stone-800">Facial Treatments</h3>
+                    <p class="text-stone-500 leading-relaxed mb-6">Rejuvenating facial therapies that restore radiance and promote deep relaxation for glowing skin.</p>
+                    <div class="overflow-hidden rounded-lg">
+                        <img src="image1.jpg" alt="Luxury facial treatment and head massage" class="w-full h-64 object-cover image-hover">
+                    </div>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="h-1 bg-amber-700 w-12 mx-auto mb-6"></div>
+                    <h3 class="text-2xl mb-4 uppercase text-stone-800">Skin Analysis</h3>
+                    <p class="text-stone-500 leading-relaxed mb-6">One-on-one consultations to build a sustainable, effective home skincare routine tailored to your needs.</p>
+                    <div class="overflow-hidden rounded-lg">
+                        <img src="image3.jpg" alt="Skin analysis and treatment results" class="w-full h-64 object-cover image-hover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nail Services Gallery -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl mb-4 text-stone-800">Nail Artistry</h2>
+                <div class="h-1 bg-amber-700 w-24 mx-auto"></div>
+                <p class="mt-4 text-stone-500">From classic elegance to bold statements</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="group">
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="image2.jpg" alt="Colorful manicure with pink, yellow and zebra print nail art" class="w-full h-96 object-cover image-hover">
+                    </div>
+                    <h3 class="text-xl mt-4 text-stone-800 font-semibold">Manicure Services</h3>
+                    <p class="text-stone-500 text-sm mt-2">Gel, acrylic, and natural nail care with custom designs</p>
+                </div>
+                
+                <div class="group">
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <img src="image4.jpg" alt="French tip pedicure with pink polish" class="w-full h-96 object-cover image-hover">
+                    </div>
+                    <h3 class="text-xl mt-4 text-stone-800 font-semibold">Pedicure Services</h3>
+                    <p class="text-stone-500 text-sm mt-2">Luxury foot care and beautiful pedicure finishes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spa Experience Section -->
+    <section class="py-24 px-6 md:px-10 bg-stone-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl mb-6 text-stone-800">The Spa Experience</h2>
+                    <div class="h-1 bg-amber-700 w-24 mb-6"></div>
+                    <p class="text-stone-600 text-lg leading-relaxed mb-6">
+                        Indulge in a luxurious escape at Beauty by Rhouser. Our spa packages are designed for relaxation, rejuvenation, and celebration.
+                    </p>
+                    <ul class="space-y-4 text-stone-600 mb-8">
+                        <li class="flex items-start">
+                            <span class="text-amber-700 mr-3 text-xl"></span>
+                            <span>Bridal party packages and group treatments</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-amber-700 mr-3 text-xl">✦</span>
+                            <span>Full-day spa experiences with refreshments</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-amber-700 mr-3 text-xl"></span>
+                            <span>Private treatment rooms for ultimate comfort</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-amber-700 mr-3 text-xl">✦</span>
+                            <span>Customized wellness packages</span>
+                        </li>
+                    </ul>
+                    <a href="#booking" class="inline-block bg-stone-900 text-white px-8 py-3 uppercase text-xs tracking-widest font-bold hover:bg-amber-700 transition">Book Your Spa Day</a>
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-2xl">
+                    <img src="image5.jpg" alt="Three women enjoying spa day in white robes with champagne at Beauty by Rhouser" class="w-full h-full object-cover image-hover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Gallery Section -->
+    <section id="gallery" class="py-24 px-6 md:px-10 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl mb-4 text-stone-800">Service Gallery</h2>
+                <div class="h-1 bg-amber-700 w-24 mx-auto"></div>
+                <p class="mt-4 text-stone-500 max-w-2xl mx-auto">Browse our complete collection of treatments and transformations</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="image0.jpg" alt="Back massage therapy" class="w-full h-64 object-cover image-hover cursor-pointer">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="image1.jpg" alt="Facial treatment" class="w-full h-64 object-cover image-hover cursor-pointer">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="image2.jpg" alt="Colorful manicure" class="w-full h-64 object-cover image-hover cursor-pointer">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="image3.jpg" alt="Skin treatment" class="w-full h-64 object-cover image-hover cursor-pointer">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="image4.jpg" alt="Pedicure service" class="w-full h-64 object-cover image-hover cursor-pointer">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md">
+                    <img src="image5.jpg" alt="Spa day experience" class="w-full h-64 object-cover image-hover cursor-pointer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="bg-stone-900 py-24 text-center text-white px-6">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl md:text-5xl mb-6">Ready to Start Your Journey?</h2>
+            <div class="h-1 bg-amber-700 w-24 mx-auto mb-8"></div>
+            <p class="text-stone-400 mb-10 text-lg">Visit our studio in Gaborone for a transformative experience. Let us help you unveil your natural luminescence.</p>
+            
+            <div class="flex flex-col md:flex-row gap-6 justify-center items-center mb-10">
+                <a href="https://wa.me/26775482753?text=Hello%20Beauty%20by%20Rhouser!%20I'd%20like%20to%20book%20an%20appointment." 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="inline-flex items-center bg-amber-700 text-white px-10 py-4 rounded-full uppercase text-xs tracking-widest font-bold hover:bg-amber-600 transition shadow-lg hover:shadow-2xl transform hover:-translate-y-1">
+                    <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                    WhatsApp Us to Book
+                </a>
+                <p class="text-stone-400 text-sm">Or call/SMS: <a href="tel:+26775482753" class="text-amber-700 hover:text-amber-600">+267 75482753</a></p>
+            </div>
+            
+            <div class="border-t border-stone-700 pt-8">
+                <p class="text-stone-500 text-sm">📍 Located in Gaborone, Botswana</p>
+                <p class="text-stone-500 text-sm mt-2">Mon - Sat: 8:00 AM - 6:00 PM | Sunday: By Appointment</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-xs text-stone-400 uppercase tracking-widest border-t border-stone-200">
+        <p>&copy; 2026 Beauty by Rhouser Botswana. All Rights Reserved.</p>
+        <p class="mt-2">Crafted with love for the modern Motswana woman</p>
+    </footer>
+
+</body>
+</html>
